@@ -1,0 +1,1 @@
+step1:-   self.spark = SparkSession.builder.appName("Faulty Vechicles Detection").getOrCreate()

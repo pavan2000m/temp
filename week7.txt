@@ -1,0 +1,15 @@
+step1:- Create a raw table using hive query
+
+CREATE TABLE patient_data(
+patient_name STRING,
+patient_id INT,
+.
+.
+.
+)
+ROW FORMATE DELIMITED
+FIELDS TERMINATE BY','
+STORED AS TEXTFILE
+step 2:-load the data into raw data table
+LOAD DATA LOCAL INPATH 'location of my cav file' OVERWRITE INTO TABLE patient_data;
+step3:-Create the transformed datatable 
